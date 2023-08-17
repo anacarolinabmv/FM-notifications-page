@@ -26,6 +26,7 @@ html {
 body {
   background-color: var(--very-light-grayish-blue);
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,12 +38,12 @@ a {
 .container {
   margin: 0 auto;
   width: 95%;
+  max-height: 98%;
   max-width: 62rem;
   background-color: var(--white);
   border-radius: 10px;
   padding: 2.6rem;
   box-shadow: 0 0 10px rgb(51, 51, 51, 0.1);
-  overflow-y: auto;
 }
 .heading--container {
   margin-bottom: 2rem;

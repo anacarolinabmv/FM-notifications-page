@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,6 +39,7 @@ body {
   max-width: 62rem;
   padding: 2.6rem;
   box-shadow: 0 0 10px rgb(51, 51, 51, 0.1);
+  overflow-y: auto;
 }
 .heading--container {
   margin-bottom: 2rem;
@@ -120,6 +122,10 @@ body {
   font-size: 1.8rem;
   margin-left: 0.5rem;
   color: var(--red);
+}
+.hide--dot {
+  visibility: hidden;
+  /* display: none; */
 }
 
 .time {

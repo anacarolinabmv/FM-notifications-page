@@ -26,17 +26,16 @@ html {
 body {
   background-color: var(--very-light-grayish-blue);
   height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 4rem;
 }
 a {
   text-decoration: none;
 }
 .container {
+  margin: 0 auto;
   background-color: var(--white);
   border-radius: 10px;
   max-width: 62rem;
@@ -161,4 +160,12 @@ a:active {
 .attribution a {
   color: var(--blue);
   text-decoration: none;
+}
+
+@media (max-width: 440px) {
+  .container {
+    margin-top: 4rem;
+    height: 100vh;
+    width: 100vw;
+  }
 }

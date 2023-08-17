@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,800;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
-}
-html {
-  font-size: 62.5%;
 }
 
 :root {
@@ -15,16 +11,130 @@ html {
   --very-light-grayish-blue: hsl(210, 60%, 98%);
   --light-grayish-blue-1: hsl(211, 68%, 94%);
   --light-grayish-blue-2: hsl(205, 33%, 90%);
-  --grayish-blue: hsl(219, 14%, 63%);
+  --grayish-blue: rgb(147, 157, 174);
   --dark-grayish-blue: hsl(219, 12%, 42%);
   --very-dark-blue: hsl(224, 21%, 14%);
   --red: hsl(1, 90%, 64%);
   --blue: hsl(219, 85%, 26%);
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--very-light-grayish-blue);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+.container {
+  background-color: var(--white);
+  border-radius: 10px;
+  max-width: 62rem;
+  padding: 2.6rem;
+  box-shadow: 0 0 10px rgb(51, 51, 51, 0.1);
+}
+.heading--container {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.heading {
+  display: inline;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.unread--notifications-msg {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--blue);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.mark--read {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: auto;
+}
+.notification {
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.notification:not(:last-child) {
+  margin-bottom: 0.6em;
+}
+.unread {
+  background-color: var(--very-light-grayish-blue);
+  cursor: pointer;
+}
+.profile--picture {
+  height: 40px;
+  width: 40px;
+}
+.align--top {
+  align-self: start;
+}
+.name a {
+  font-weight: 800;
+  color: var(--very-dark-blue);
+  text-decoration: none;
+}
+
+.action {
+  color: var(--grayish-blue);
+  padding: 0 0.2rem;
+}
+
+.group a {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.post a {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.private--msg {
+  border: 1px solid var(--light-grayish-blue-1);
+  border-radius: 4px;
+  width: 98%;
+  margin-top: 1rem;
+  padding: 1em;
+  color: var(--grayish-blue);
+}
+.unread--dot {
+  font-size: 1.8rem;
+  margin-left: 0.5rem;
+  color: var(--red);
+}
+
+.time {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+  padding-top: 0.2rem;
+}
+
 .attribution {
-  font-size: 11px;
+  margin-top: 2rem;
   text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--blue);
+  text-decoration: none;
 }
